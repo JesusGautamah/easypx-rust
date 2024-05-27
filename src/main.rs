@@ -1,5 +1,6 @@
 use std::env;
 use std::process::{Command, exit};
+use std::thread::sleep;
 
 fn check_packages(packages: &[&str]) {
     for package in packages {
@@ -63,6 +64,7 @@ fn shuffle() {
     run_command("sudo", &["service", "tor", "restart"]);
     println!("proxyshuffle successfully");
     println!("\n");
+    sleep(std::time::Duration::from_secs(5));
     let ip = run_command("torify", &["curl", "icanhazip.com"]);
     println!("Your new IP: {}", ip);
     println!("\n");
