@@ -59,5 +59,8 @@ cargo build --release
 sudo cp target/release/easypx /usr/bin/
 ```
 
+## License
+This project is licensed under the [MIT License](https://github.com/JesusGautamah/easypx-rust/blob/main/LICENSE).
+
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
